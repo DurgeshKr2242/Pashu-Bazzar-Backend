@@ -24,9 +24,9 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
   res.setHeader(
     "Access-Control-Allow-Headers",
-    "Access-Control-Allow-Headers, Origin,Accept,authorization, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+    "Access-Control-Allow-Headers,Access-Control-Allow-Origin, Origin,Accept,authorization, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
   );
-  res.setHeader("Access-Control-Allow-Headers", "*");
+  // res.setHeader("Access-Control-Allow-Headers", "*");
 
   next();
 });
